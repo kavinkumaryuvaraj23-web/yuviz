@@ -1,0 +1,149 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #111111;
+    height: 65px;
+}
+
+.logo{
+    font-size: 25px;
+    letter-spacing: 7px;
+    color: #FFFFFF;
+    
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 35px;
+}
+
+.nav-link-text{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-link-text:hover{
+transform: translateY(-2px);
+}
+
+.nav-link-text.active {
+    color: #E8C477;
+    border-bottom: 2px solid #E8C477;
+    padding-bottom: 5px;
+}
+
+.nav-last{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-last img {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.nav-last > img:hover {
+    transform: translateY(-2px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TABLET RESPONSIVE */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    .navbar {
+        padding: 0 20px;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 20px;
+        letter-spacing: 4px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-link-text {
+        font-size: 13px;
+    }
+
+    .nav-last {
+        gap: 15px;
+    }
+
+    .nav-last img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+/* MOBILE RESPONSIVE */
+@media (min-width: 320px) and (max-width: 600px) {
+
+    .navbar {
+        height: auto;
+        min-height: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 12px;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 22px;
+        letter-spacing: 5px;
+    }
+
+    .nav-last {
+        gap: 18px;
+    }
+
+    .nav-last img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .nav-link-text {
+        font-size: 11px;
+        white-space: nowrap;
+    }
+
+    .nav-link-text.active {
+        padding-bottom: 5px;
+    }
+}

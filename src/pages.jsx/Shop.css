@@ -1,0 +1,389 @@
+
+.shop-page {
+    background-color: #111111;
+    min-height: 100vh;
+    padding: 40px 80px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.shop-header {
+    background-size: cover;
+    background-position: center 5%;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    padding: 40px 70px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.shop-header h1 {
+    color: white;
+    font-size: 48px;
+    letter-spacing: 5px;
+}
+
+.shop-header p {
+    color: #EEEEEE;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.shop-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.shop-search,
+.shop-filter,
+.shop-sort {
+    background-color: #1B1B1B;
+    color: white;
+    border: 1px solid #444444;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 14px;
+}
+
+.shop-search {
+    flex: 1;
+    min-width: 0;
+}
+
+.shop-filter,
+.shop-sort {
+    min-width: 180px;
+}
+
+.shop-search:focus,
+.shop-filter:focus,
+.shop-sort:focus {
+    outline: none;
+    border-color: #E8C477;
+}
+
+
+
+.shop-count {
+    color: #CCCCCC;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+.shop-page .featured-container {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.shop-page .product-card {
+    background: #111111;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.shop-page .product-image {
+    position: relative;
+}
+
+.shop-page .product-image > img:first-child {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+
+.shop-page .wishlist-icon {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.shop-page .product-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+
+.shop-page .product-info h3 {
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 7px;
+}
+
+.shop-page .product-info p {
+    color: #E8C477;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.shop-page .cart-btn {
+    width: 34px;
+    height: 34px;
+    background: transparent;
+    border: 1px solid #AAAAAA;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.shop-page .cart-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.shop-page .cart-btn:hover {
+    border-color: #E8C477;
+}
+
+
+
+
+
+
+
+
+
+
+.shop-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    flex-wrap: nowrap;
+}
+
+.shop-pagination button {
+    padding: 10px 20px;
+    background-color: #161616;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.shop-pagination button:hover:not(:disabled) {
+    background-color: #E8C477;
+    color: #111111;
+}
+
+.shop-pagination button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.page-number {
+    color: #E8C477;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   MOBILE - UP TO 600px
+========================= */
+
+@media (max-width: 600px) {
+
+    .shop-page {
+        padding: 20px 15px;
+    }
+
+    .shop-header {
+        height: 230px;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+        background-position: center;
+    }
+
+    .shop-header h1 {
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+
+    .shop-header p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .shop-controls {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .shop-search {
+        flex: 0 0 100%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .shop-filter,
+    .shop-sort {
+        flex: 1;
+        min-width: 0;
+        width: 100%;
+    }
+
+    .shop-page .featured-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .shop-page .product-image > img:first-child {
+        height: 190px;
+    }
+
+    .shop-page .product-details {
+        padding: 10px;
+    }
+
+    .shop-page .product-info h3 {
+        font-size: 12px;
+    }
+
+    .shop-page .product-info p {
+        font-size: 12px;
+    }
+
+    .shop-page .cart-btn {
+        width: 30px;
+        height: 30px;
+    }
+
+    .shop-page .cart-btn img {
+        width: 17px;
+        height: 17px;
+    }
+
+    .shop-pagination {
+        gap: 8px;
+    }
+
+    .shop-pagination button {
+        padding: 9px 12px;
+        font-size: 12px;
+    }
+
+    .page-number {
+        font-size: 12px;
+    }
+}
+
+
+/* =========================
+   TABLET - 601px TO 1024px
+========================= */
+
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    .shop-page {
+        padding: 30px 35px;
+    }
+
+    .shop-header {
+        height: 320px;
+        padding: 30px;
+    }
+
+    .shop-header h1 {
+        font-size: 34px;
+        letter-spacing: 3px;
+    }
+
+    .shop-header p {
+        font-size: 14px;
+    }
+
+    .shop-controls {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .shop-search {
+        flex: 1 1 100%;
+    }
+
+    .shop-filter,
+    .shop-sort {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .shop-page .featured-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .shop-page .product-image > img:first-child {
+        height: 240px;
+    }
+}
+
+
+/* =========================
+   PC - ABOVE 1024px
+========================= */
+
+@media (min-width: 1025px) {
+
+    .shop-page {
+        padding: 40px 80px;
+    }
+
+    .shop-page .featured-container {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    .shop-header {
+        height: 400px;
+    }
+}

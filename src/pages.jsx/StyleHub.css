@@ -1,0 +1,261 @@
+
+
+
+.stylehub-page {
+    background-color: #111111;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+
+.stylehub-hero {
+    height: 350px;
+    background-size: cover;
+    background-position: center 10%;
+    display: flex;
+    align-items: center;
+    padding: 40px 8%;
+}
+
+.stylehub-hero-content {
+    max-width: 650px;
+}
+
+.stylehub-label {
+    color: #E8C477;
+    letter-spacing: 3px;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.stylehub-hero h1 {
+    color: white;
+    font-size: 48px;
+    letter-spacing: 3px;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+.stylehub-hero h1 span {
+    color: #E8C477;
+}
+
+.stylehub-description {
+    color: #CCCCCC;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 450px;
+}
+
+.stylehub-benefits {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.stylehub-benefits div {
+    color: #E8C477;
+    font-size: 13px;
+}
+
+.stylehub-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 12px 26px;
+    margin-top: 15px;
+    background-color: #E8C477;
+    color: #111111;
+    border: 1px solid #E8C477;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.stylehub-btn:hover {
+    background-color: transparent;
+    color: #E8C477;
+    border-color: #E8C477;
+    transform: translateY(-2px);
+}
+
+.stylehub-btn:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+    .stylehub-btn {
+        padding: 11px 20px;
+        font-size: 12px;
+    }
+}
+
+
+
+.stylehub-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    padding: 30px 6%;
+}
+
+.stylehub-card {
+    min-height: 260px;
+    background-size: cover;
+    background-position: center 0%;
+    border: 1px solid #444444;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+}
+
+.stylehub-card-content {
+    width: 48%;
+}
+
+.stylehub-number {
+    color: #E8C477;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.stylehub-card h2 {
+    color: white;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.stylehub-card-content > p:not(.stylehub-number) {
+    color: #CCCCCC;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+.stylehub-card button {
+    background-color: #E8C477;
+    color: #111111;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.stylehub-card button:hover {
+    background-color: #F5D895;
+}
+
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    .stylehub-hero {
+        height: 320px;
+        padding: 30px 5%;
+    }
+
+    .stylehub-hero h1 {
+        font-size: 36px;
+    }
+
+    .stylehub-container {
+        gap: 15px;
+        padding: 25px;
+    }
+
+    .stylehub-card {
+        padding: 18px;
+        min-height: 250px;
+    }
+
+    .stylehub-card-content {
+        width: 60%;
+    }
+
+    .stylehub-card h2 {
+        font-size: 19px;
+    }
+
+    .stylehub-benefits {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+
+    .stylehub-hero {
+        height: 320px;
+        padding: 25px 20px;
+        background-position: 65% center;
+    }
+
+    .stylehub-hero h1 {
+        font-size: 29px;
+        letter-spacing: 1px;
+    }
+
+    .stylehub-label {
+        font-size: 12px;
+    }
+
+    .stylehub-description {
+        font-size: 13px;
+        max-width: 260px;
+    }
+
+    .stylehub-benefits {
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .stylehub-benefits div {
+        font-size: 11px;
+    }
+
+    .stylehub-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 20px 15px;
+    }
+
+    .stylehub-card {
+        min-height: 250px;
+        padding: 20px;
+    }
+
+    .stylehub-card-content {
+        width: 60%;
+    }
+
+    .stylehub-card h2 {
+        font-size: 19px;
+    }
+
+    .stylehub-card-content > p:not(.stylehub-number) {
+        font-size: 12px;
+    }
+
+    .stylehub-card button {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+}
