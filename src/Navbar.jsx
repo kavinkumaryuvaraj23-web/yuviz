@@ -2,6 +2,10 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import './Navbar.css'
 
+import searchIcon from "./icons/search.svg";
+import contactIcon from "./icons/contact.svg";
+import cartIcon from "./icons/cart.svg";
+
 export default function Navbar() {
   return (
     <nav className="navbar">
@@ -17,9 +21,9 @@ export default function Navbar() {
       </div>
 
     <div className="nav-last">
-    <img src="/src/icons/search.svg" alt="Search" />
-    <img src="/src/icons/contact.svg" alt="Profile" />
-    <img src="/src/icons/cart.svg" alt="Cart" />
+    <img src={searchIcon} alt="Search" />
+    <img src={contactIcon} alt="Profile" />
+    <img src={cartIcon} alt="Cart" />
     </div>
 
 

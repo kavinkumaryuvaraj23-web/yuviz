@@ -4,6 +4,9 @@ import shopBanner from '../assets/shop-banner.webp'
 import shopProducts from '../data/shopProducts'
 import { useSearchParams } from 'react-router-dom'
 
+import favoriteIcon from "../icons/favorite-heart.svg";
+import shoppingCartIcon from "../icons/shopping_cart.svg";
+
 export default function Shop() {
 
 const [searchParams, setSearchParams] = useSearchParams();
@@ -93,7 +96,7 @@ const currentProducts = filteredProducts.slice(
               <div className="product-card" key={product.id}>
                   <div className="product-image">
                     <img src={product.image} alt={product.name} />
-                    <img className="wishlist-icon" src="/src/icons/favorite-heart.svg" alt="Wishlist"/>
+                    <img className="wishlist-icon" src={favoriteIcon} alt="Wishlist" />
                 </div>
 
                 <div className="product-details">
@@ -103,7 +106,7 @@ const currentProducts = filteredProducts.slice(
                   </div>
                   
                   <button className="cart-btn" type="button">
-                    <img src="/src/icons/shopping_cart.svg" alt="Cart" />
+                    <img src={shoppingCartIcon} alt="Cart" />
                   </button>
                </div>
 

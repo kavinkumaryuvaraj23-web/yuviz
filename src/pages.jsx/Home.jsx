@@ -3,6 +3,13 @@ import './Home.css'
 import categories from '../data/categories';
 import products from '../data/products';
 
+import diamondIcon from "../icons/diamond.svg";
+import dressHookIcon from "../icons/dress-hook.svg";
+import exchangeIcon from "../icons/exchange-hand.svg";
+import creditCardIcon from "../icons/credit_card.svg";
+import favoriteIcon from "../icons/favorite-heart.svg";
+import shoppingCartIcon from "../icons/shopping_cart.svg";
+
 
 export default function Home() {
   return (
@@ -25,13 +32,13 @@ export default function Home() {
 
       <section className='home-bgd-btm'>
         <div className="home-bgd-btm-cnt">
-          <img src="/src/icons/diamond.svg" alt="" />
+          <img src={diamondIcon} alt="" />
           <p>Premium Quality Fabrics</p>
-          <img src="/src/icons/dress-hook.svg" alt="" />
+          <img src={dressHookIcon} alt="" />
           <p>Trendy & Modern Styles</p>
-          <img src="/src/icons/exchange-hand.svg" alt="" />
+          <img src={exchangeIcon} alt="" />
           <p>Easy Returns & Exchanges</p>
-          <img src="/src/icons/credit_card.svg" alt="" />
+          <img src={creditCardIcon} alt="" />
           <p>Secure Payments</p>
         </div>
       </section>
@@ -82,7 +89,7 @@ export default function Home() {
               <div className="product-card" key={product.id}>
                   <div className="product-image">
                     <img src={product.image} alt={product.name} />
-                    <img className="wishlist-icon" src="/src/icons/favorite-heart.svg" alt="Wishlist"/>
+                    <img className="wishlist-icon" src={favoriteIcon} alt="Wishlist" />
                 </div>
 
                 <div className="product-details">
@@ -92,7 +99,7 @@ export default function Home() {
                   </div>
                   
                   <button className="cart-btn" type="button">
-                    <img src="/src/icons/shopping_cart.svg" alt="Cart" />
+                    <img src={shoppingCartIcon} alt="Cart" />
                   </button>
                </div>
 
