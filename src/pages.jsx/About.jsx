@@ -3,7 +3,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './About.css'
 
-import heroImg from '../images/stylehub/about-main.png'
+import heroImg from '../images/stylehub/about-main.webp'
 
 export default function About() {
 
