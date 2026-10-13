@@ -1,3 +1,4 @@
+
 .home-content > p:first-child {
     color: #E8C477;
     padding-top: 50px;
@@ -13,19 +14,18 @@
     letter-spacing: 2px;
 }
 
-.home-content > h1{
+.home-content > h1 {
     font-family: Arial, Helvetica, sans-serif;
     color: #FFFFFF;
     font-size: 64px;
     letter-spacing: 5px;
 }
 
-.home-bgd{
+.home-bgd {
     background-image: url(../assets/Cinematic\ Urban\ Portrait\ in\ Warm\ Light.webp);
-    background-size:cover;
+    background-size: cover;
     background-position: center 0%;
     height: 82vh;
-
     display: flex;
     align-items: center;
     padding: 0 8%;
@@ -43,6 +43,9 @@
     font-weight: 700;
     letter-spacing: 1px;
     cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
 }
 
 .shop-btn:hover {
@@ -50,84 +53,83 @@
     transform: translateY(-3px);
 }
 
-.home-bgd-btm{
+.home-bgd-btm {
     background-color: #111111;
-    height: 80px ;
+    height: 80px;
     align-content: center;
     border-top: 1px solid #FFFFFF;
     border-bottom: 1px solid #FFFFFF;
 }
 
-.home-bgd-btm-cnt{
+.home-bgd-btm-cnt {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     color: #FFFFFF;
     font-family: Arial, Helvetica, sans-serif;
     align-items: center;
 }
 
-.home-bgd-btm-cnt > img{
+.home-bgd-btm-cnt > img {
     border: 1px solid #FFFFFF;
     border-radius: 50%;
     padding: 8px;
 }
 
-.home-bgd-btm-cnt > p{
+.home-bgd-btm-cnt > p {
     border-right: 2px solid #FFFFFF;
-    padding-right: 20px; 
+    padding-right: 20px;
 }
 
-.home-bgd-btm-cnt > p:last-child{
+.home-bgd-btm-cnt > p:last-child {
     border: none;
 }
-
 
 .category {
     background-color: #111111;
 }
 
-.cat-head{
+.cat-head {
     display: flex;
     justify-content: space-between;
 }
 
-.cat-head-cnt{
+.cat-head-cnt {
     padding: 35px 0px;
     padding-left: 80px;
 }
 
-.cat-head-cnt h1{
+.cat-head-cnt h1 {
     color: #FFFFFF;
     font-size: 25px;
     letter-spacing: 3px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.cat-head-cnt p{
+.cat-head-cnt p {
     color: #CCCCCC;
     font-size: 14px;
     margin-top: 5px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.cat-head-view{
+.cat-head-view {
     padding: 35px 0px;
     padding-right: 80px;
     display: flex;
     gap: 5px;
 }
 
-.cat-head-view p{
+.cat-head-view a {
     font-size: 17px;
     color: #FFFFFF;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.cat-head-view p:hover {
-    color: #E8C477;
+    text-decoration: none;
     cursor: pointer;
 }
 
+.cat-head-view a:hover {
+    color: #E8C477;
+}
 
 .category-container {
     display: grid;
@@ -144,7 +146,7 @@
 }
 
 .category-card img {
-     width: 100%;
+    width: 100%;
     height: 300px;
     object-fit: cover;
     object-position: center top;
@@ -178,11 +180,8 @@
 }
 
 .category-card-content p:hover {
-     color: #111111;
+    color: #111111;
 }
-
-
-
 
 .featured {
     background-color: #111111;
@@ -196,14 +195,15 @@
     margin-bottom: 15px;
 }
 
-.featured-view p {
+.featured-view a {
     color: #FFFFFF;
     font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.featured-view p:hover {
+.featured-view a:hover {
     color: #E8C477;
 }
 
@@ -301,36 +301,7 @@
     border-color: #E8C477;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ============================= */
-/* TABLET: 601px - 1024px */
-/* ============================= */
-
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-
     .home-bgd {
         height: 65vh;
         min-height: 480px;
@@ -416,19 +387,11 @@
     }
 }
 
-
-/* ============================= */
-/* MOBILE: 320px - 600px */
-/* ============================= */
-
 @media screen and (min-width: 320px) and (max-width: 600px) {
-
     .home {
         width: 100%;
         min-width: 0;
     }
-
-    /* HERO SECTION */
 
     .home-bgd {
         height: 560px;
@@ -489,8 +452,6 @@
         font-size: 12px;
     }
 
-    /* BENEFITS SECTION */
-
     .home-bgd-btm {
         height: auto;
         padding: 20px 12px;
@@ -519,8 +480,6 @@
         border: none;
     }
 
-    /* SHOP BY CATEGORY */
-
     .cat-head {
         padding: 25px 15px 20px;
         align-items: flex-start;
@@ -546,7 +505,7 @@
         line-height: 1.4;
     }
 
-    .cat-head-view p {
+    .cat-head-view a {
         font-size: 11px;
         white-space: nowrap;
     }
@@ -582,8 +541,6 @@
         font-size: 11px;
     }
 
-    /* FEATURED PRODUCTS */
-
     .featured {
         padding: 20px 15px 45px;
     }
@@ -609,7 +566,7 @@
         line-height: 1.4;
     }
 
-    .featured-view p {
+    .featured-view a {
         font-size: 11px;
         white-space: nowrap;
     }

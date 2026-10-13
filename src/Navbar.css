@@ -68,7 +68,7 @@ transform: translateY(-2px);
 
 
 
-/* TABLET RESPONSIVE */
+
 @media (min-width: 601px) and (max-width: 1024px) {
 
     .navbar {
@@ -101,7 +101,7 @@ transform: translateY(-2px);
 }
 
 
-/* MOBILE RESPONSIVE */
+
 @media (min-width: 320px) and (max-width: 600px) {
 
     .navbar {

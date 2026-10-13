@@ -1,7 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+
 import './Home.css'
 import categories from '../data/categories';
 import products from '../data/products';
+
+
 
 import diamondIcon from "../icons/diamond.svg";
 import dressHookIcon from "../icons/dress-hook.svg";
@@ -25,8 +29,10 @@ export default function Home() {
 
           <p>MODERN LOOKS FOR THE EVERYDAY MAN</p>
 
-          <button className='shop-btn'>SHOP NOW </button>
-          
+          <Link to="/shop" className="shop-btn">
+              SHOP NOW
+          </Link>
+
         </div>
       </section>
 
@@ -52,7 +58,7 @@ export default function Home() {
           </div>
 
           <div className='cat-head-view'>
-            <p>View All →</p> 
+            <Link to="/shop">View All →</Link>
           </div>
         </div>
 
@@ -79,7 +85,7 @@ export default function Home() {
         </div>
 
         <div className="featured-view">
-          <p>View All →</p>
+          <Link to="/shop">View All →</Link>
         </div>
       </div>
 
